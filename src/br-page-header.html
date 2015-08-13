@@ -1,0 +1,46 @@
+<link rel="import" href="../../polymer/polymer.html">
+<link rel="import" href="../../br-icons/src/br-icons.html">
+
+<dom-module id="br-page-header">
+
+<style>
+  :host {
+    display: flex;
+    margin-bottom: 1em;
+  }
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    flex-grow: 1;
+  }
+  .icon {
+    --iron-icon-height: 32px;
+    --iron-icon-width: 32px;
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+</style>
+
+<template>
+
+  <template is="dom-if" if="{{icon}}">
+    <br-icons icon$="{{icon}}" class="icon"></br-icons>
+  </template>
+
+  <h1>{{text}}</h1>
+
+</template>
+
+<script>
+  Polymer({
+    is: 'br-page-header',
+
+    properties: {
+      text: String,
+      icon: String
+    }
+
+  });
+</script>
+
+</dom-module>
