@@ -1,6 +1,6 @@
 {
   "name": "br-page-header",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/bed-rock/br-page-header",
   "authors": [
     "cbfranca <cleidsonbf@gmail.com>"
@@ -10,8 +10,11 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "src",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bedrock-base": "~1.0.0",
+    "br-icons": "~1.0.0"
+  }
 }
