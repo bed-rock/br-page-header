@@ -2,6 +2,7 @@
 
 :host {
   display: flex;
+  align-items: center;
   margin-bottom: 2em;
 
   h1 {
@@ -10,12 +11,12 @@
   }
 
   .page_icon {
-    margin-right: 0.5rem;
+    margin-right: 1rem;
     flex-shrink: 0;
   }
 
   .tooltip_icon {
-    color: $color-primary;
+    color: $color-gray-light;
   }
 
   abbr {
