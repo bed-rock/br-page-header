@@ -1,9 +1,10 @@
 {
   "name": "br-page-header",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "homepage": "https://github.com/bed-rock/br-page-header",
   "authors": [
-    "cbfranca <cleidsonbf@gmail.com>"
+    "cbfranca <cleidsonbf@gmail.com>",
+    "marcelo-ribeiro <marceloribeiromidia@gmail.com>",
   ],
   "license": "MIT",
   "ignore": [

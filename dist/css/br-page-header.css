@@ -2,6 +2,9 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 2em;
 }
 :host h1 {
@@ -9,13 +12,13 @@
   margin: 0;
 }
 :host .page_icon {
-  margin-right: 0.5rem;
+  margin-right: 1rem;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
 }
 :host .tooltip_icon {
-  color: #334455;
+  color: #999;
 }
 :host abbr {
   -webkit-align-self: flex-end;
