@@ -1,19 +1,17 @@
 <dom-module id="br-page-header">
 
-<link rel="import" type="css" href="../dist/css/br-page-header.css">
-
 <template>
 
   <template is="dom-if" if="{{icon}}">
-    <br-icons icon$="{{icon}}" class="icon__2lg  page_icon"></br-icons>
+    <br-icons icon$="{{icon}}" class="icon__2lg  page--header--icon"></br-icons>
   </template>
 
-  <h1>{{text}}</h1>
+  <h1 class="page--header--title">{{text}}</h1>
 
   <template is="dom-if" if="{{tooltip}}">
-    <abbr>
-      <br-icons icon="br-icons:info" class="icon__sm  tooltip_icon" data-toggle="tooltip" data-title$="{{tooltip}}"></br-icons>
-    </abbr>
+    <div class="informative_icon" data-toggle="tooltip" data-title$="{{tooltip}}">
+      <br-icons icon="br-icons:info" class="icon__sm"></br-icons>
+    </div>
   </template>
 
 </template>
@@ -26,6 +24,10 @@
       text: String,
       icon: String,
       tooltip: String
+    },
+
+    ready: function () {
+      this.classList.add('page--header');
     }
 
   });
